@@ -1,0 +1,166 @@
+
+.cart-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: 140px 20px;
+}
+
+/* Элемент корзины */
+.cart-item {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+/* Изображение товара */
+.cart-item-image {
+  flex: 0 0 120px;
+  margin-right: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Детали товара */
+.cart-item-details {
+  flex: 1;
+}
+
+.product-name {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.price-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.price,
+.quantity,
+.total {
+  font-size: 14px;
+  color: #666;
+}
+
+.total {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Футер корзины */
+.cart-footer {
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-total {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.checkout-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.checkout-button:hover {
+  background-color: #ffa600;
+  color: #000;
+}
+.delete-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.delete-button:hover {
+  background-color: #980000;
+
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+    flex: 0 0 auto;
+  }
+
+  .price-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .cart-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+/* ===================================== */
+.order-success {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 180px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-success h2 {
+  color: #28a745;
+  margin-bottom: 16px;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+}
+
+.back-button:hover {
+  background: #218838;
+  color: #000;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  padding: 40px;
+}

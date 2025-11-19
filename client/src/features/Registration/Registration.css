@@ -1,0 +1,79 @@
+body {
+  background: #000;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Центрируем форму */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Бокс формы */
+.register-form {
+  background: #111;
+  padding: 32px;
+  border-radius: 12px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+/* Поля ввода */
+.register-form input {
+  background: #000;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.register-form input:focus {
+  border-color: #777;
+  outline: none;
+}
+
+/* Кнопка */
+.register-form button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.register-form button:hover {
+  background: #00ff1152;
+}
+
+/* Ссылка "Войти" */
+.login-link {
+  text-align: center;
+  color: #888;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

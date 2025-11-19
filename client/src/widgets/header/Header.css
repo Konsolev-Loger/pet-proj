@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Play:wght@400;700&family=Tektur:wght@400..900&display=swap');
+
+.fixed-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #000000;
+}
+
+/* .header {
+  background: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.bottom-bar {
+  background: #a2ff00;
+  padding: 7px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* ОТСТУП ДЛЯ КОНТЕНТА ПОД ФИКСИРОВАННЫМ ХЕДЕРОМ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tektur', sans-serif;
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* Верхняя жёлтая полоса с доставкой */
+/* .top-bar {
+  background: #ffdc00;
+  padding: 12px 0;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+} */
+
+/* .top-bar .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50%;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+} */
+
+/* Чёрная навигация */
+.header {
+  background: #000000;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #a2ff00;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #a2ff00;
+}
+
+.nav-menu a.sale {
+  color: #a2ff00;
+}
+
+.header-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.header-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  cursor: pointer;
+  transition: fill 0.3s;
+}
+
+.header-icons svg:hover {
+  fill: #a2ff00;
+}
+
+/* Нижняя жёлтая полоса с контактами */
+/* .bottom-bar {
+  background: #610000;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+} */
+
+.bottom-bar .location,
+.bottom-bar .phone,
+.bottom-bar .time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottom-bar svg {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .nav-menu {
+    gap: 20px;
+  }
+  .bottom-bar {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-menu {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .bottom-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,151 @@
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.orders-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.order-id {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.order-title {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+.order-date {
+  margin: 0;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.no-orders {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+.order-items-list {
+  margin: 10px 0;
+}
+
+.order-product-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  gap: 12px;
+}
+
+.order-product-item:last-child {
+  border-bottom: none;
+}
+
+.product-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.product-price {
+  margin: 0;
+  font-weight: bold;
+  color: #007bff;
+  font-size: 0.9em;
+}
+
+.order-total {
+  font-weight: bold;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  padding-top: 5px;
+  margin-top: 5px;
+  color: #000000;
+}
+
+.logout {
+  margin-left: auto;
+  font-size: 30px !important;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.logout:hover {
+  transform: scale(1.2);
+}
