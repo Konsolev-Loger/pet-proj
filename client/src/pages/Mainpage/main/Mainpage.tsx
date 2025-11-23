@@ -55,7 +55,6 @@ export default function Mainpage({
   };
   // ======================================================================
   useEffect(() => {
-    getAllProduct();
     getNews();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

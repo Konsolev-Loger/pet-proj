@@ -23,7 +23,7 @@ export default function Registration({ setUser }: RegistrationProps) {
     setFormData({ ...formData, [name]: value });
   };
   // ======================================================================
-  const registrationHandle = async (e: React.FormEvent<HTMLFormElement>) => {
+  const registrationHandle = async (e) => {
     e.preventDefault();
     try {
       const response = await UserApi.signup(formData);
@@ -68,7 +68,7 @@ export default function Registration({ setUser }: RegistrationProps) {
           />
           <input
             type="password"
-            name="password"
+            name="passwordd"
             placeholder="Пароль"
             required
             // value={formData.password}
