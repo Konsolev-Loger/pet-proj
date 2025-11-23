@@ -11,7 +11,7 @@ type ProfileProps = {
   user: UserState;
 };
 
-export default function Profilepage({ setUser }: ProfileProps) {
+export default function Profilepage({ setUser, user }: ProfileProps) {
   const [myorder, setMyorder] = useState<Order[]>([]);
   // const [showEdit, setShowEdit] = useState(false);
 

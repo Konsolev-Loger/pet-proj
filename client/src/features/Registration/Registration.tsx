@@ -23,7 +23,7 @@ export default function Registration({ setUser }: RegistrationProps) {
     setFormData({ ...formData, [name]: value });
   };
   // ======================================================================
-  const registrationHandle = async (e) => {
+  const registrationHandle = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
       const response = await UserApi.signup(formData);
